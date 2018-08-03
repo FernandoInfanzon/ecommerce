@@ -10,7 +10,7 @@ $("#btnCategorias").click(function(){
 
 	}else{
 
-		$("#cabezote").after($("#categorias").slideToggle("fast"))
+		$("#header").after($("#categorias").slideToggle("fast"))
 		
 	}
 

@@ -15,6 +15,16 @@
 
 	<title>Tienda Virtual Adelphos Moné</title>
 
+	<?php 
+
+		$icono = ControladorPlantilla::ctrEstiloPlantilla();
+
+		echo '<link rel="icon" href="http://localhost/frontend/'.$icono["icono"].'">';
+
+	?>
+
+
+	
 	<link rel="stylesheet" href="vistas/css/plugins/bootstrap.min.css">
 	<link rel="stylesheet" href="vistas/css/plugins/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -44,5 +54,10 @@ include "modulos/header.php"
 
 
 ?>
+
+<script src="vistas/js/header.js"></script>
+<script src="vistas/js/plantilla.js"></script>
+
+
 </body>
 </html>

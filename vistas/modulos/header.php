@@ -12,35 +12,25 @@
 		<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 social">	
 			
 			<ul>
-				<li>
-					<a href="http://facebook.com/" target="_blank">
-						<i class="fa fa-facebook redSocial facebookBlanco" aria-hidden="true"></i>
-					</a>
-				</li>
+<?php 
 
-				<li>
-					<a href="http://youtube.com/" target="_blank">
-						<i class="fa fa-youtube redSocial youtubeBlanco" aria-hidden="true"></i>
-					</a>
-				</li>
+	$social = ControladorPlantilla::ctrEstiloPlantilla();
 
-				<li>
-					<a href="http://twitter.com/" target="_blank">
-						<i class="fa fa-twitter redSocial twitterBlanco" aria-hidden="true"></i>
-					</a>
-				</li>
+	$jsonRedesSociales = json_decode($social["redesSociales"],true);
 
-				<li>
-					<a href="http://google.com/" target="_blank">
-						<i class="fa fa-google-plus redSocial googleBlanco" aria-hidden="true"></i>
+	foreach ($jsonRedesSociales as $key => $value) {
+		
+		echo '<li>
+					<a href="'.$value["url"].'" target="_blank">
+						<i class="fa '.$value["red"].' redSocial '.$value["estilo"].'" aria-hidden="true"></i>
 					</a>
-				</li>
+				</li>';
 
-				<li>
-					<a href="http://instagram.com/" target="_blank">
-						<i class="fa fa-instagram redSocial instagramBlanco" aria-hidden="true"></i>
-					</a>
-				</li>
+	}
+
+	
+
+ ?>
 			</ul>
 
 			
@@ -88,7 +78,7 @@
 
 			<a href="#">
 				
-				<img src="vistas/img/plantilla/logo.png" class="img-responsive" alt="Logo Adelphos">
+				<img src="http://localhost/frontend/<?php echo $social["logo"]; ?>" class="img-responsive" alt="Logo Adelphos">
 
 			</a>
 			
