@@ -154,106 +154,54 @@
 			=================================-->
 			
 			<div class="col-xs-12 backColor" id="categorias">
-				<div class="col-lg-2 col-mx-3 col-sm-4 col-xs-12">
-					<h4>
-						<a href="#" class="pixelCategorias">Lorem Ipsum</a>
-					</h4>
 
-					<hr>
+				<?php 
 
-					<ul>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-mx-3 col-sm-4 col-xs-12">
-					<h4>
-						<a href="#" class="pixelCategorias">Lorem Ipsum</a>
-					</h4>
+					$item = null;
+					$valor = null;
 
-					<hr>
 
-					<ul>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-mx-3 col-sm-4 col-xs-12">
-					<h4>
-						<a href="#" class="pixelCategorias">Lorem Ipsum</a>
-					</h4>
+					$categorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
 
-					<hr>
+					
 
-					<ul>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-mx-3 col-sm-4 col-xs-12">
-					<h4>
-						<a href="#" class="pixelCategorias">Lorem Ipsum</a>
-					</h4>
+					foreach ($categorias as $key => $value) {
 
-					<hr>
+					echo '<div class="col-lg-2 col-mx-3 col-sm-4 col-xs-12">
+							<h4>
+								<a href="'.$value["ruta"].'" class="pixelCategorias">'.$value["categoria"].'</a>
+							</h4>
 
-					<ul>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-						<li>
-							<a href="#" class="pixelSubCategorias">Lorem Ipsum</a>
-						</li>
-					</ul>
-				</div>
+							<hr>
+
+							<ul>';
+
+							$item = "id_categoria";
+
+							$valor = $value["id"];
+
+							$subcategorias = ControladorProductos::ctrMostrarSubCategorias($item, $valor);
+
+							foreach ($subcategorias as $key => $value) {
+								echo '
+
+								<li>
+									<a href="'.$value["ruta"].'" class="pixelSubCategorias">'.$value["subcategoria"].'</a>
+								</li>';
+							}
+
+							echo '</ul>
+
+						</div>';
+
+					}
+								
+								
+					
+				 ?>
+
+				
+				
 			</div>
 			
 			<!--====  End of Categorias  ====-->
