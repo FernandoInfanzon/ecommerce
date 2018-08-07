@@ -106,7 +106,7 @@ ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
 
 	header #logotipo img{
 		padding: 0px 90px;
-    padding-left: 25px;
+    padding-left: 0px;
 	}
 
 	header #carrito{
@@ -189,7 +189,7 @@ MOVIL (XS revisamos en 320px)
     margin-left: 30%;
     padding: 0px;
     margin-top: 10px;
-}
+
 	}
 
 	header #categorias{

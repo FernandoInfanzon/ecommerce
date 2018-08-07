@@ -13,13 +13,15 @@
 	cillum dolore eu fugiat, nulla pariatur,. Excepteur sint occaecat, cupidatat non
 	proident, sunt in culpa qui, officia deserunt mollit, anim id est laborum.">
 
-	<title>Tienda Virtual Adelphos Moné</title>
+	<title>Tienda Adelphos Moné</title>
 
 	<?php 
 
+		$servidor = Ruta::ctrRutaServidor();
+
 		$icono = ControladorPlantilla::ctrEstiloPlantilla();
 
-		echo '<link rel="icon" href="http://localhost/frontend/'.$icono["icono"].'">';
+		echo '<link rel="icon" href="'.$servidor.$icono["icono"].'">';
 
 		/*=============================================
 		MANTENER LA RUTA FIJA DEL PROYECTO
@@ -38,11 +40,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plantilla.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/header.css">
-
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/slide.css">
 
 	<script src="<?php echo $url; ?>vistas/js/plugins/jquery.min.js"></script>
 	<script src="<?php echo $url; ?>vistas/js/plugins/bootstrap.min.js"></script>
-
+	<script src="<?php echo $url; ?>vistas/js/plugins/jquery.easing.js"></script>
 
 
 
@@ -113,13 +115,16 @@ if(isset($_GET["ruta"])){
 
 	}
 
+} else {
+
+	include "modulos/slide.php";
 }
 
 ?>
 
 <script src="<?php echo $url; ?>vistas/js/header.js"></script>
 <script src="<?php echo $url; ?>vistas/js/plantilla.js"></script>
-
+<script src="<?php echo $url; ?>vistas/js/slide.js"></script>
 
 </body>
 </html>

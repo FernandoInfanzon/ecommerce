@@ -1,37 +1,45 @@
+<?php 
+
+	$servidor = Ruta::ctrRutaServidor();
+
+ ?>
+
+
+
 <!--=========================
 =            TOP            =
 ==========================-->
 <div class="container-fluid barraSuperior" id="top">
 
-<div class="container">
-	<div class="row">
+	<div class="container">
+		<div class="row">
 		
-			<!--=====================================
-			=            Section SOCIAL            =
-			======================================-->
-		<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 social">	
+				<!--=====================================
+				=            Section SOCIAL            =
+				======================================-->
+			<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 social">	
+				
+				<ul>
+	<?php 
+
+		$social = ControladorPlantilla::ctrEstiloPlantilla();
+
+		$jsonRedesSociales = json_decode($social["redesSociales"],true);
+
+		foreach ($jsonRedesSociales as $key => $value) {
 			
-			<ul>
-<?php 
+			echo '<li>
+						<a href="'.$value["url"].'" target="_blank">
+							<i class="fa '.$value["red"].' redSocial '.$value["estilo"].'" aria-hidden="true"></i>
+						</a>
+					</li>';
 
-	$social = ControladorPlantilla::ctrEstiloPlantilla();
+		}
 
-	$jsonRedesSociales = json_decode($social["redesSociales"],true);
-
-	foreach ($jsonRedesSociales as $key => $value) {
 		
-		echo '<li>
-					<a href="'.$value["url"].'" target="_blank">
-						<i class="fa '.$value["red"].' redSocial '.$value["estilo"].'" aria-hidden="true"></i>
-					</a>
-				</li>';
 
-	}
-
-	
-
- ?>
-			</ul>
+	 ?>
+				</ul>
 
 			
 
@@ -67,51 +75,51 @@
 =            HEADER            =
 =============================-->
 
-<header class="container-fluid">
-	<div class="container">
-			<div class="row" id="header">
+<header class="container">
+	<div class="container-fluid">
+		<div class="row" id="header">
 		
-		<!--==============================
-		=            LOGOTIPO            =
-		===============================-->
-		<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12" id="logotipo">
+			<!--==============================
+			=            LOGOTIPO            =
+			===============================-->
+			<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12" id="logotipo">
 
-			<a href="#">
+				<a href="#">
+					
+					<img src="<?php echo $servidor.$social["logo"]; ?>" class="img-responsive" alt="Logo Adelphos">
+
+				</a>
 				
-				<img src="http://localhost/frontend/<?php echo $social["logo"]; ?>" class="img-responsive" alt="Logo Adelphos">
 
-			</a>
-			
-
-		</div>	
-	
-		
-		<!--====  End of LOGOTIPO  ====-->
-
-		<!--==================================================
-		=            BLOQUE CATEGORIAS Y BUSCADOR            =
-		===================================================-->
-
-		<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
-			
-			<!--================================
-			=            BOTON CATEGORIAS            =
-			=================================-->
-			
-			
-			<div class="col-lg-4 col-md-4  col-sm-4 col-xs-12 backColor" id="btnCategorias">
-				<p>
-					CATEGORIAS
-					<span class="pull-right">
-						<i class="fa fa-bars" aria-hidden="true"></i>
-					</span>
-				</p>
-			</div>
-			
-			<!--====  End of CATEGORIAS  ====-->
-			
+			</div>	
 		
 			
+			<!--====  End of LOGOTIPO  ====-->
+
+			<!--==================================================
+			=            BLOQUE CATEGORIAS Y BUSCADOR            =
+			===================================================-->
+
+			<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+				
+				<!--================================
+				=            BOTON CATEGORIAS            =
+				=================================-->
+				
+				
+				<div class="col-lg-4 col-md-4  col-sm-4 col-xs-12 backColor" id="btnCategorias">
+					<p>
+						CATEGORIAS
+						<span class="pull-right">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</span>
+					</p>
+				</div>
+				
+				<!--====  End of CATEGORIAS  ====-->
+				
+			
+				
 			
 			<!--===============================
 			=            BUSCADOR            =
@@ -145,6 +153,8 @@
 				<p>TU PEDIDO <span class="cantidadCesta"></span> <br> MXN $ <span class="sumaCesta"></span>
 				</p>
 			</div>
+
+		</div>
 			
 			
 			<!--====  End of CARRITO DE COMPRAS ====-->
@@ -206,6 +216,10 @@
 			
 			<!--====  End of Categorias  ====-->
 			
+
+	
+
+	
 
 	</div>
 	
