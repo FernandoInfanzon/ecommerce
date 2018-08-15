@@ -33,15 +33,19 @@
 	?>
 
 
-	
+	<!-- PLUGINS CSS -->
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+
+<!-- HOJAS DE ESTILO PERSONALIZADAS -->
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plantilla.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/header.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/slide.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/productos.css">
 
+<!-- PLUGINS JAVASCRIPT -->
 	<script src="<?php echo $url; ?>vistas/js/plugins/jquery.min.js"></script>
 	<script src="<?php echo $url; ?>vistas/js/plugins/bootstrap.min.js"></script>
 	<script src="<?php echo $url; ?>vistas/js/plugins/jquery.easing.js"></script>
@@ -118,10 +122,12 @@ if(isset($_GET["ruta"])){
 } else {
 
 	include "modulos/slide.php";
+	include "modulos/destacados.php";
 }
 
 ?>
 
+<!-- JAVASCRIPT PERSONALIZADO -->
 <script src="<?php echo $url; ?>vistas/js/header.js"></script>
 <script src="<?php echo $url; ?>vistas/js/plantilla.js"></script>
 <script src="<?php echo $url; ?>vistas/js/slide.js"></script>
