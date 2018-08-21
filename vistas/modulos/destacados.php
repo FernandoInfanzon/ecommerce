@@ -390,6 +390,8 @@ VITRINA DE CERVEZAS DE TEMPORADA
 
 		</ul>
 
+		
+
 		<!--=====================================
 		VITRINA DE PRODUCTOS EN LISTA
 		======================================-->
@@ -951,9 +953,9 @@ VITRINA DE PRODUCTOS MÁS VENDIDOS
 						
 						<a href="#" class="pixelProducto">
 							
-							Vestido Clásico<br>
+							Cerveza Clara<br>
 
-							<span class="label label-warning fontSize">40% off</span>
+							<span class="label label-warning fontSize">10% off</span>
 
 						</a>	
 
@@ -969,11 +971,11 @@ VITRINA DE PRODUCTOS MÁS VENDIDOS
 
 						<small>
 						
-							<strong class="oferta">USD $29</strong>
+							<strong class="oferta">USD $100</strong>
 
 						</small>
 
-						<small>$11</small>
+						<small>$90</small>
 
 					</h2>
 
@@ -1031,7 +1033,7 @@ VITRINA DE PRODUCTOS MÁS VENDIDOS
 						
 						<a href="#" class="pixelProducto">
 							
-							Top Dama
+							Cerveza Obscura
 							
 							<br>
 							<br>
@@ -1048,7 +1050,7 @@ VITRINA DE PRODUCTOS MÁS VENDIDOS
 					
 					<h2>
 
-						<small>USD $29</small>
+						<small>$80</small>
 
 					</h2>
 
@@ -1124,7 +1126,7 @@ VITRINA DE PRODUCTOS MÁS VENDIDOS
 
 									<span class="label label-warning">Nuevo</span> 
 
-									<span class="label label-warning">40% off</span>
+									<span class="label label-warning">20% off</span>
 
 								</a>
 
@@ -1138,11 +1140,11 @@ VITRINA DE PRODUCTOS MÁS VENDIDOS
 
 							<small>
 
-								<strong class="oferta">USD $29</strong>
+								<strong class="oferta">USD $100</strong>
 
 							</small>  
 
-							<small>$11</small>
+							<small>$80</small>
 
 						</h2>
 
@@ -1296,9 +1298,9 @@ VITRINA DE PRODUCTOS MÁS VISTOS
 						
 						<a href="#" class="pixelProducto">
 							
-							Curso de Bootstrap <br>
+							Cerveza Clara <br>
 
-							<span class="label label-warning fontSize">90% off</span>
+							<span class="label label-warning fontSize">20% off</span>
 
 						</a>	
 
@@ -1314,11 +1316,11 @@ VITRINA DE PRODUCTOS MÁS VISTOS
 
 						<small>
 						
-							<strong class="oferta">USD $100</strong>
+							<strong class="oferta">$100</strong>
 
 						</small>
 
-						<small>$10</small>
+						<small>$80</small>
 
 					</h2>
 
@@ -1382,9 +1384,9 @@ VITRINA DE PRODUCTOS MÁS VISTOS
 						
 						<a href="#" class="pixelProducto">
 							
-							Curso de Canvas y Javascript <br>
+							Cerveza Ambar <br>
 
-							<span class="label label-warning fontSize">90% off</span>
+							<span class="label label-warning fontSize">10% off</span>
 
 						</a>	
 
@@ -1400,11 +1402,11 @@ VITRINA DE PRODUCTOS MÁS VISTOS
 
 						<small>
 						
-							<strong class="oferta">USD $100</strong>
+							<strong class="oferta">$100</strong>
 
 						</small>
 
-						<small>$10</small>
+						<small>$90</small>
 
 					</h2>
 
@@ -1468,9 +1470,9 @@ VITRINA DE PRODUCTOS MÁS VISTOS
 						
 						<a href="#" class="pixelProducto">
 							
-							Aprende Javascript desde cero <br>
+							Cerveza Clara <br>
 
-							<span class="label label-warning fontSize">90% off</span>
+							<span class="label label-warning fontSize">10% off</span>
 
 						</a>	
 
@@ -1486,11 +1488,11 @@ VITRINA DE PRODUCTOS MÁS VISTOS
 
 						<small>
 						
-							<strong class="oferta">USD $100</strong>
+							<strong class="oferta">$100</strong>
 
 						</small>
 
-						<small>$10</small>
+						<small>$90</small>
 
 					</h2>
 
@@ -1554,9 +1556,9 @@ VITRINA DE PRODUCTOS MÁS VISTOS
 						
 						<a href="#" class="pixelProducto">
 							
-							Curso de jQuery <br>
+							Cerveza Obscura <br>
 
-							<span class="label label-warning fontSize">90% off</span>
+							<span class="label label-warning fontSize">10% off</span>
 
 						</a>	
 
@@ -1572,11 +1574,11 @@ VITRINA DE PRODUCTOS MÁS VISTOS
 
 						<small>
 						
-							<strong class="oferta">USD $100</strong>
+							<strong class="oferta">$100</strong>
 
 						</small>
 
-						<small>$10</small>
+						<small>$90</small>
 
 					</h2>
 
@@ -1654,9 +1656,9 @@ VITRINA DE PRODUCTOS MÁS VISTOS
 
 								<a href="#" class="pixelProducto">
 
-									Curso de Bootstrap
+									Cerveza Clara
 
-									<span class="label label-warning">90% off</span>
+									<span class="label label-warning">10% off</span>
 
 								</a>
 
@@ -1670,11 +1672,11 @@ VITRINA DE PRODUCTOS MÁS VISTOS
 
 							<small>
 
-								<strong class="oferta">USD $100</strong>
+								<strong class="oferta">$100</strong>
 
 							</small>  
 
-							<small>$10</small>
+							<small>$90</small>
 
 						</h2>
 
