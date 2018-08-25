@@ -75,8 +75,8 @@
 =            HEADER            =
 =============================-->
 
-<header class="container">
-	<div class="container-fluid">
+<header class="container-fluid">
+	<div class="container">
 		<div class="row" id="header">
 		
 			<!--==============================
@@ -84,7 +84,7 @@
 			===============================-->
 			<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12" id="logotipo">
 
-				<a href="#">
+				<a href="http://localhost/frontend">
 					
 					<img src="<?php echo $servidor.$social["logo"]; ?>" class="img-responsive" alt="Logo Adelphos">
 
